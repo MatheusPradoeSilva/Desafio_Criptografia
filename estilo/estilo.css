@@ -108,6 +108,7 @@ header{
     color: white;
     width: 30%;
     border: none;
+    font-weight: bold;
     border-radius: 15px;
 }
 
@@ -116,6 +117,7 @@ header{
     border: solid 2px var(--cor-texto-secundaria) !important;
     color: var(--cor-texto);
     width: 30%;
+    font-weight: bold;
     border: none;
     border-radius: 15px;
 }
