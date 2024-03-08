@@ -21,13 +21,15 @@ header{
 }
 
 .tela_inicial{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background: var(--cor-fundo);
     padding: 2%;
+    padding-bottom: 0%;
     padding-left: 20%;
     padding-right: 20%;
-    gap: 20px;
+    gap: 4%;
 }
 
 .container_aviso{
@@ -35,11 +37,11 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     height: 2%;
-    gap: 10px;
+    gap: 3%;
 }
 
 .imagem_info{
-    height: 20px;
+    height: 100%;
 }
 
 .input_texto_criptografar{
@@ -52,6 +54,7 @@ header{
     font-family: "Inter", sans-serif;
     resize: none;
     columns: none;
+    height: 25%;
     padding: 8% ;
     padding-top: 2%;
     padding-left: 2%;
@@ -66,6 +69,8 @@ header{
     display: flex;
     flex-direction: column;
     border-radius: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: #FFE1E1;
     padding-top: 3%; padding-bottom: 3%;
     box-shadow: 0 9px 8px rgb(0 0 0 / 0.1);
@@ -80,7 +85,7 @@ header{
 
 .codigo_imagem{
     align-self: center;
-    height: 15vh;
+    width: 40%;
 }
 
 .nenhuma_mensagem{
@@ -108,7 +113,7 @@ header{
     color: white;
     width: 30%;
     border: none;
-    font-weight: bold;
+    font-size: 1.2rem;
     border-radius: 15px;
 }
 
@@ -117,7 +122,7 @@ header{
     border: solid 2px var(--cor-texto-secundaria) !important;
     color: var(--cor-texto);
     width: 30%;
-    font-weight: bold;
+    font-size: 1.2rem;
     border: none;
     border-radius: 15px;
 }
@@ -126,6 +131,7 @@ header{
     background-color: #e7bbbb;
     border: solid 2px var(--cor-texto-secundaria) !important;
     color: var(--cor-texto);
+    font-size: 1rem;
     width: 20%;
     height: 5vh;
     border: none;
@@ -149,4 +155,94 @@ header{
 }
 .input_texto_criptografar{
     border: none;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 80vh){
+
+    .tela_inicial{
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+       background: var(--cor-fundo);
+       padding: 2%;
+       padding-left: 20%;
+       padding-right: 20%;
+       gap: 20px;
+    }
+
+    .texto_criptografar, .input_texto_criptografar{
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        resize: none;
+        columns: none;
+        padding: 8% ;
+        padding-top: 2%;
+        padding-left: 2%;
+        border-radius: 30px;
+    }
+
+    .input_texto_criptografar{
+        font-size: 250%;
+        font-weight:500;
+    }
+
+    .texto_criptografado{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    background-color: #FFE1E1;
+    padding-top: 10%; padding-bottom: 3%;
+    box-shadow: 0 9px 8px rgb(0 0 0 / 0.1);
+    gap: 8%;
+    }
+
+    .codigo_imagem{
+        width: 60%;
+    }
+
+    .nenhuma_mensagem{
+        font-size: 300%;
+        text-align: center;
+        font-weight: 600;
+        }
+
+    .texto_deseja{
+        font-size: 150%;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .botao_copiar{
+        height: 15%;
+        width: 40%;
+        font-size: 1.6rem;
+
+    }
+
+    .botao_criptografar{
+        height: 90%;
+        width: 50%;
+        font-size: 1.8rem;
+    }
+
+    .botao_descripto{
+        height: 90%;
+        width: 50%;
+        font-size: 1.8rem;
+    }
+
+    .container_aviso{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 4%;
+        font-size: 1.6rem;
+        gap: 3%;
+    }
+    
+    .imagem_info{
+        height: 50%;
+    }
 }
